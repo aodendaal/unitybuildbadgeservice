@@ -51,7 +51,7 @@ namespace UnityBuildBadge.Controllers
                     break;
                 case BuildState.Unknown:
                     status = "unknown";
-                    color = "lightgrey";
+                    color = "orange";
                     break;
             }
 

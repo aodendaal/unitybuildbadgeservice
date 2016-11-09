@@ -14,12 +14,19 @@
 9. Click Next: Save
 
 ### Add Badge
-In the readme mark down add an image with the url http://unitybuildbadge.azurewebsites.net/api/status/<projectid>
-where <projectid> is the GUID for the project
+In the readme mark down add an image with the url http://unitybuildbadge.azurewebsites.net/api/status/[projectid]
+where [projectid] is the GUID for the project
 
 Example: `![Build Status](http://unitybuildbadge.azurewebsites.net/api/status/7edd192b-eb38-410a-9caa-54ed4192ae87)`
 
 ## How it works
 The Unity Cloud Build posts build status information to the Unity Build Badge Service which is stored in a NoSQL database.
 
-When the build badge with your Id is fetched the latest build status information is used to compose a (sheild.io)[http://shield.io] SVG format badge.
+When the build badge with your Id is fetched the latest build status information is used to compose a [shields.io](http://shields.io) SVG format badge.
+
+### Available Statuses
+
+![Pending](https://img.shields.io/badge/build-pending-lightgrey.svg)
+![Passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![Failing](https://img.shields.io/badge/build-failing-red.svg)
+![Unknown](https://img.shields.io/badge/build-unknown-orange.svg)
