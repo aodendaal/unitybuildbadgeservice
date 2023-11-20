@@ -1,3 +1,5 @@
+This project is no longer running and has been archived
+
 # Unity Build Badge Service
 
 ## How to Use
